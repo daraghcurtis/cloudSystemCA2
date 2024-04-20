@@ -7,10 +7,10 @@ This is a college MiniNet (SDN) CA which uses floodlight as the Controller
 ![Topology Diagram](https://github.com/daraghcurtis/cloudSystemCA2/blob/main/tropoImage.png "Network Topology")
 
 ### Purpose
-Simulate a network for automation test engineers. <br>
-Anything coming from h99 (mobile) should be handled by mobile hosts via flow rules. <br>
-Anything coming from h1 (desktop) should be handled by desktop switches via flow rules. <br>
-Load balance the traffic between the switches using round-robin (simple form) . <br>
++ Simulate a network for automation test engineers. <br>
++ Anything coming from h99 (mobile) should be handled by mobile hosts via flow rules in switches. <br>
++ Anything coming from h1 (desktop) should be handled by desktop hosts via flow rules in switches. <br>
++ Load balance the traffic between the switches using round-robin (simple form) . <br>
 
 ## Features
 1. Connects to a remote floodlight controller
@@ -20,9 +20,9 @@ Load balance the traffic between the switches using round-robin (simple form) . 
 5. Built in unit test cases to test the connection and load balancing
 
 ## Requirements
-1.Floodlight is running in a separate remote VM <br>
-2.You have vitualbox installed on your machine <br>
-3.You have mininet installed on your machine <br>
+1. Floodlight is running in a separate remote VM <br>
+2. You have vitualbox installed on your machine <br>
+3. You have mininet installed on your machine <br>
 
 ## Installation
 Best way is to clone the project to your local mininet machine custom folder <br>
@@ -50,8 +50,8 @@ sudo mn --c <br>
 sudo python topo_v2.py 
 ``` 
 ## Testing
-The test cases will automatically run when the code is run. <br>
-If a test fails, mininet will exit so that you can see the issue. <br>
++ The test cases will automatically run when the code is run. <br>
++ If a test fails, mininet will exit so that you can see the issue. <br>
 
 ## Exit miniNet
-To exit mininet, type `exit` or press `ctrl + d`
++  To exit mininet, type `exit` or press `ctrl + d`
