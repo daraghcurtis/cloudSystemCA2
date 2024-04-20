@@ -14,26 +14,24 @@ Best way is to clone the project to your local mininet machine custom folder <br
 `git clone https://github.com/daraghcurtis/cloudSystemCA2.git` <br>
 
 Otherwise you can copy the files to the custom folder on the mininet VM : <br>
+*On your miniNet VM :* <br>
 
-Go to the mininet custom folder on the mininet VM <br>
+1. Go to the mininet custom folder on the mininet VM <br>
 e.g here : `mininet@mininet-vm:~/mininet/custom`
 <br>
-**On you miniNet VM :** <br>
-create a file called `topo_v2.py` by doing `nano topo_v2.py` <br>
-<br>copy the content from git repo file `topo_v2.py` to the new VM file `topo_v2.py` file
-
-Change the IP address in the file to the IP address of the remote VM where floodlight is running  
+2. create a file called `topo_v2.py` by doing `nano topo_v2.py` <br>
+3. copy the content from git repo file `topo_v2.py` to the new VM file `topo_v2.py` file
+3. Change the IP address in the file to the IP address of the remote VM where floodlight is running  
 *lines 14 - 15*   
 Example :   <br>
 ```
 ip='192.168.147.62' # Ip address of floodlight server 
 port=6653 # Remote controller port listening on floodlight
 ```
-<br>
-<br> save the file : `ctl+x, y, enter`
+4. save the file : `ctl+x, y, enter`
 
 ## Running the code
-Run the following commands in the mininet VM from custom folder where you created the py file : <br>
+5. Run the following commands in the mininet VM from custom folder where you created the py file : <br>
 ```
 sudo mn --c <br> 
 sudo python topo_v2.py 
