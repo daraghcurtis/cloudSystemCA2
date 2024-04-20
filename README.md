@@ -6,7 +6,7 @@ This is a college MiniNet (SDN) CA which uses floodlight as the Controller
 ## Topology
 ![Topology Diagram](https://github.com/daraghcurtis/cloudSystemCA2/blob/main/tropoImage.png "Network Topology")
 
-### Purpose
+## Purpose
 + Simulate a network for automation test engineers. <br>
 + Anything coming from h99 (mobile) should be handled by mobile hosts via flow rules in switches. <br>
 + Anything coming from h1 (desktop) should be handled by desktop hosts via flow rules in switches. <br>
