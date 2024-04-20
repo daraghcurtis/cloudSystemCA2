@@ -20,11 +20,10 @@ Otherwise you can copy the files to the custom folder on the mininet VM : <br>
 e.g here : `mininet@mininet-vm:~/mininet/custom` <br>
 2. create a file called `topo_v2.py` by doing `nano topo_v2.py` <br>
 3. copy the content from git repo file `topo_v2.py` to the new VM file `topo_v2.py` file
-3. Change the IP address in the file to the IP address of the remote VM where floodlight is running  
-*lines 14 - 15*   
+3. Change the IP address on lines  *14 - 15* in the mininet Vm file `topo_v2.py` to the IP address of the remote VM where floodlight is running
 Example :   <br>
 ```
-ip='192.168.147.62' # Ip address of floodlight server 
+ip='192.168.147.62' # Ip address of remote running floodlight server 
 port=6653 # Remote controller port listening on floodlight
 ```
 4. save the file : `ctl+x, y, enter`
@@ -35,8 +34,6 @@ port=6653 # Remote controller port listening on floodlight
 sudo mn --c <br> 
 sudo python topo_v2.py 
 ``` 
-<br>
-
 ## Testing
 The test cases will automatically run when the code is run. <br>
 If a test fails, mininet will exit so that you can see the issue. <br>
