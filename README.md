@@ -3,6 +3,12 @@
 ## Introduction
 This is a college MiniNet (SDN) CA which uses floodlight as the Controller
 
+## Topology
+![Topology Diagram](https://github.com/daraghcurtis/cloudSystemCA2/blob/main/tropoImage.png "Network Topology")
+
+
+## Features
+
 ## Requirements
 1.Floodlight is running in a separate remote VM <br>
 2.You have vitualbox installed on your machine <br>
