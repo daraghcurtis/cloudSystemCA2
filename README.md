@@ -17,8 +17,7 @@ Otherwise you can copy the files to the custom folder on the mininet VM : <br>
 *On your miniNet VM :* <br>
 
 1. Go to the mininet custom folder on the mininet VM <br>
-e.g here : `mininet@mininet-vm:~/mininet/custom`
-<br>
+e.g here : `mininet@mininet-vm:~/mininet/custom` <br>
 2. create a file called `topo_v2.py` by doing `nano topo_v2.py` <br>
 3. copy the content from git repo file `topo_v2.py` to the new VM file `topo_v2.py` file
 3. Change the IP address in the file to the IP address of the remote VM where floodlight is running  
